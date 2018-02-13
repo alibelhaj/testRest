@@ -19,7 +19,7 @@ class UserController extends Controller
     /**
      * @Rest\Get("/users")
      * @ApiDoc(
-     *     section="Get list user",
+     *     section="users",
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
@@ -44,7 +44,7 @@ class UserController extends Controller
      * @Rest\Get("/users/{id}", requirements={"id": "\d+"})
      * @ParamConverter("user", class="AppBundle:User")
      * @ApiDoc(
-     *     section="Get Detail user",
+     *     section="users",
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
@@ -67,7 +67,7 @@ class UserController extends Controller
      * @Rest\View(statusCode=Response::HTTP_CREATED)
      * @Rest\Post("/users")
      * @ApiDoc(
-     *   section="Post users",
+     *   section="users",
      *   resource = true,
      *   parameters={
      *      {"name"="email", "dataType"="string", "required"=true, "description"="Email utilisateur "},
@@ -105,7 +105,7 @@ class UserController extends Controller
      * @Rest\View(statusCode=Response::HTTP_CREATED)
      * @Rest\Put("/users/{id}")
      * @ApiDoc(
-     *   section="Put users",
+     *   section="users",
      *   resource = true,
      *   parameters={
      *      {"name"="email", "dataType"="string", "required"=true, "description"="Email utilisateur "},

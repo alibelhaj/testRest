@@ -20,7 +20,7 @@ class GroupeController extends Controller
     /**
      * @Rest\Get("/groups")
      * @ApiDoc(
-     *     section="Get list groupe",
+     *     section="Group",
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
@@ -45,7 +45,7 @@ class GroupeController extends Controller
      * @Rest\Get("/groups/{id}", requirements={"id": "\d+"})
      * @ParamConverter("groupe", class="AppBundle:Groupe")
      * @ApiDoc(
-     *     section="Get Detail groupe",
+     *     section="Group",
      *   resource = true,
      *   statusCodes = {
      *     200 = "Returned when successful",
@@ -69,7 +69,7 @@ class GroupeController extends Controller
      * @Rest\View(statusCode=Response::HTTP_CREATED)
      * @Rest\Post("/groups")
      * @ApiDoc(
-     *   section="Post Group",
+     *   section="Group",
      *   resource = true,
      *   parameters={
      *      {"name"="nom", "dataType"="string", "required"=true, "description"="Nom groupe"},
@@ -103,7 +103,7 @@ class GroupeController extends Controller
      * @Rest\Put("/groups/{id}")
      *
      * @ApiDoc(
-     *   section="Put Group",
+     *   section="Group",
      *   resource = true,
      *   parameters={
      *      {"name"="nom", "dataType"="string", "required"=true, "description"="Nom groupe"},
